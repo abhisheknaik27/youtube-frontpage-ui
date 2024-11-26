@@ -1,6 +1,7 @@
 import Image from "next/image";
 import localFont from "next/font/local";
 import VideoCard from "@/components/VideoCard";
+import VideoGrid from "@/components/VideoGrid";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -16,15 +17,7 @@ const geistMono = localFont({
 export default function Home() {
   return (
     <div>
-      <VideoCard
-        title="Beast Mode - Official Lyric Video | Beast | Thalapathy Vijay | Sun
-            Pictures | Nelson | Anirudh"
-        image="thumbnail1.jpg"
-        thumbImage="logo1.jpg"
-        author="Sun TV"
-        views="75M"
-        timeStamp="2 years Ago"
-      />
+      <VideoGrid />
     </div>
   );
 }
