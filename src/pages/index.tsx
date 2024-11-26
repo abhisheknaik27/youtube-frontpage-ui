@@ -2,6 +2,7 @@ import Image from "next/image";
 import localFont from "next/font/local";
 import VideoCard from "@/components/VideoCard";
 import VideoGrid from "@/components/VideoGrid";
+import Appbar from "@/components/Appbar";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -17,6 +18,7 @@ const geistMono = localFont({
 export default function Home() {
   return (
     <div>
+      <Appbar />
       <VideoGrid />
     </div>
   );
