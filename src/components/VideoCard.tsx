@@ -1,11 +1,11 @@
 const VideoCard = (props: any) => {
   return (
-    <div className="p-3">
+    <div className="p-3 cursor-pointer">
       <img className="rounded-xl" src={props.image}></img>
       <div className="grid grid-cols-12 ml-4 my-5">
-        <div className="col-span-1  ">
+        <div className="col-span-1 ">
           <img
-            className=" w-14 h-14  rounded-full"
+            className=" w-10 h-10  rounded-full"
             src={props.thumbImage}
             alt=""
           />
